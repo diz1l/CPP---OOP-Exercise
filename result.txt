@@ -1,0 +1,63 @@
+Vek: 3
+Zije: 1
+Po vymesovani: 0
+Student: Dias Nurgaliyev
+Znamky: 1 2 3 
+Prumer: 2
+Jmeno: Pytlik
+Vek: 2
+Zije: 1
+Po vymesovani: 0
+Zvire: Pytlik2, zaludek: 0, vek: 2
+Kopie zvire: Zvire: Pytlik2, zaludek: 0, vek: 2
+Student: Dias Nurgaliyev
+Znamky: 1 2 3 
+Prumer: 2
+Kopie studenta: Student: Dias Nurgaliyev
+Znamky: 1 2 3 
+Prumer: 2
+Pred sortem: 9 3 6
+Po sortu:    3 6 9
+a = 3 + 4i
+b = 1 - 2i
+a + b = 4 + 2i
+a - b = 2 + 6i
+a * b = 11 - 2i
+a += b: 4 + 2i
+copy a: 4 + 2i
+Po setu: 10 + 5i
+Real: 10, Imag: 5
+Zvire: Pytlik, zaludek: 9, vek: 2
+Kopie: Zvire: Pytlik, zaludek: 9, vek: 2
+Prirazeni: Zvire: Pytlik, zaludek: 9, vek: 2
+Student: Dias Nurgaliyev
+Znamky: 1 2 
+Prumer: 1.5
+Kopie: Student: Dias Nurgaliyev
+Znamky: 1 2 
+Prumer: 1.5
+Prirazeni: Student: Dias Nurgaliyev
+Znamky: 1 2 
+Prumer: 1.5
+s1: Ahoj
+s2 (copy s1): Ahoj
+s3: Svete
+s4 (= s1): Ahoj
+Delka s1: 4
+l1: 42
+l2 (copy l1): 42
+l3 (= 100): 100
+l4 (= l1): 42
+s1 + s2 = Ahoj Svete
+s1 += s2: Ahoj Svete
+LongInt a: 10
+LongInt b (copy): 10
+LongInt c (=25): 25
+--- Staticka alokace ---
+Zvire: Zvire1, zaludek: 4, vek: 1
+Zvire: Pes, zaludek: 6, vek: 1
+  Savec, pocet prstu: 5
+Zvire: Papousek, zaludek: 3, vek: 1
+  Ptak, barva peri: Zelena
+Zvire: Kapr, zaludek: 5, vek: 1
+  Ryba, slanost vody: Sladka
