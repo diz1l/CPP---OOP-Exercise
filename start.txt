@@ -10,4 +10,4 @@ g++ zadani_4/main.cpp zadani_4/str.cpp zadani_4/longint.cpp -o out && ./out
 # zadani_5:
 g++ zadani_5/main.cpp zadani_5/str.cpp zadani_5/longint.cpp -o out && ./out
 # zadani_6:
-g++ zadani_6/main.cpp zadani_6/zvire.cpp zadani_6/savec.cpp zadani_6/ptak.cpp zadani_6/ryba.cpp -o out && ./out
+g++ zadani_6/main.cpp zadani_6/zvire.cpp zadani_6/savec.cpp zadani_6/ptak.cpp zadani_6/ryba.cpp -o out && ./outЁ

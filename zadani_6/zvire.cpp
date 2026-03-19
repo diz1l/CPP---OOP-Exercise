@@ -4,20 +4,22 @@
 #include <iostream>
 #include <cstring>
 
-Zvire::Zvire(const char* jm)
+Zvire::Zvire(const char* jm, int ov)
 {
     if (jm == 0) jm = "";
-    zaludek = 1;
-    vek     = 0;
-    jmeno   = new char[strlen(jm) + 1];
+    zaludek      = 1;
+    vek          = 0;
+    ocekavanyVek = ov;
+    jmeno        = new char[strlen(jm) + 1];
     strcpy(jmeno, jm);
 }
 
 Zvire::Zvire(const Zvire& z)
 {
-    zaludek = z.zaludek;
-    vek     = z.vek;
-    jmeno   = new char[strlen(z.jmeno) + 1];
+    zaludek      = z.zaludek;
+    vek          = z.vek;
+    ocekavanyVek = z.ocekavanyVek;
+    jmeno        = new char[strlen(z.jmeno) + 1];
     strcpy(jmeno, z.jmeno);
 }
 
@@ -30,10 +32,11 @@ Zvire& Zvire::operator=(const Zvire& z)
 {
     if (this == &z) return *this;
     delete[] jmeno;
-    jmeno   = new char[strlen(z.jmeno) + 1];
+    jmeno        = new char[strlen(z.jmeno) + 1];
     strcpy(jmeno, z.jmeno);
-    zaludek = z.zaludek;
-    vek     = z.vek;
+    zaludek      = z.zaludek;
+    vek          = z.vek;
+    ocekavanyVek = z.ocekavanyVek;
     return *this;
 }
 
@@ -45,9 +48,10 @@ void Zvire::setJmeno(const char* jm)
     strcpy(jmeno, jm);
 }
 
-const char* Zvire::getJmeno() const { return jmeno; }
-int  Zvire::zije() const            { return zaludek > 0; }
-int  Zvire::stari() const           { return vek; }
+const char* Zvire::getJmeno()       const { return jmeno; }
+int         Zvire::getOcekavanyVek() const { return ocekavanyVek; }
+int         Zvire::zije()           const { return zaludek > 0; }
+int         Zvire::stari()          const { return vek; }
 
 int Zvire::jez(int jidlo)
 {
@@ -68,7 +72,8 @@ int Zvire::vymesuj(int objem)
 
 void Zvire::vypis() const
 {
-    std::cout << "Zvire: " << jmeno
-              << ", zaludek: " << zaludek
-              << ", vek: " << vek << std::endl;
+    std::cout << "Zvire: "        << jmeno
+              << ", zaludek: "    << zaludek
+              << ", vek: "        << vek
+              << ", ocekavany vek: " << ocekavanyVek << std::endl;
 }

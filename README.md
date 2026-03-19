@@ -16,8 +16,8 @@ Dias Nurgaliyev 39994
 1. Class `Zvire`: `zaludek`, methods `jez`, `vymesuj`, `zije`
 2. Access modifier experiment (`public`)
 3. Extended `Zvire` with `stari()` (age increases when feeding)
-4. Class `Student` with subject records, credit, exam attempts
-5. Methods: `getZnamka`, `pocetSplnenych`, `prumerZnamek`, `vypis`
+4. Class `Student` with enums `Predmet` and `Znamka`, subject enrollment via `zapis()`, credit + exam logic via `hodnoceni()` (exam only after credit, max 3 attempts)
+5. Methods: `vypis`, `pocetSlozenych`, `prumer`
 
 ## Exercise 2 – References, pointers, constructors (5/5)
 
@@ -47,8 +47,8 @@ Dias Nurgaliyev 39994
 
 ## Exercise 6 – Inheritance (2 tasks)
 
-1. Classes `Savec`, `Ptak`, `Ryba` derived from `Zvire`
-2. Enum fields: `PocetPrstu`, `BarvaPeri`, `SlanostVody`
+1. Classes `Savec`, `Ptak`, `Ryba` derived from `Zvire`, each with own `jez()` (different age counting); `ocekavanyVek` field in base class, initialized per subclass (Savec=25, Ptak=15, Ryba=5)
+2. Enum fields: `PocetPrstu` (Savec), `BarvaPeri` (Ptak), `SlanostVody` (Ryba)
 
 ## Build and run
 

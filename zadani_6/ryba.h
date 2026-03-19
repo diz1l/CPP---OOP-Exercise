@@ -18,6 +18,7 @@ private:
 public:
     Ryba(const char* jmeno = "", SlanostVody sv = SLADKA);
 
+    int         jez(int jidlo);
     SlanostVody getSlanostVody() const;
     void        vypis() const;
 };

@@ -21,6 +21,7 @@ private:
 public:
     Ptak(const char* jmeno = "", BarvaPeri bp = BILA);
 
+    int       jez(int jidlo);
     BarvaPeri getBarvaPeri() const;
     void      vypis() const;
 };

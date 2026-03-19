@@ -4,7 +4,16 @@
 #include <iostream>
 
 Ptak::Ptak(const char* jmeno, BarvaPeri bp)
-    : Zvire(jmeno), barvaPeri(bp) {}
+    : Zvire(jmeno, 15), barvaPeri(bp) {}
+
+int Ptak::jez(int jidlo)
+{
+    if (!zije()) return 0;
+    if (jidlo < 0) return zaludek;
+    vek += 2;
+    zaludek += jidlo;
+    return zaludek;
+}
 
 BarvaPeri Ptak::getBarvaPeri() const
 {

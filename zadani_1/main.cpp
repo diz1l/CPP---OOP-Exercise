@@ -11,23 +11,25 @@ using namespace std;
 
 int main()
 {
-    // Test Zvire
     Zvire pytlik;
     pytlik.jez(5);
-    pytlik.jez(3);
-    pytlik.jez(2);
-    cout << "Vek: " << pytlik.stari() << endl;
-    cout << "Zije: " << pytlik.zije() << endl;
+    cout << "Vek: "           << pytlik.stari() << endl;
+    cout << "Zije: "          << pytlik.zije()  << endl;
     pytlik.vymesuj(100);
-    cout << "Po vymesovani: " << pytlik.zije() << endl;
+    cout << "Po vymesovani: " << pytlik.zije()  << endl;
 
-    // Test Student
     Student s;
     s.setJmeno("Dias Nurgaliyev");
+    s.zapis(MATEMATIKA);
+    s.zapis(FYZIKA);
+    s.zapis(PROGRAMOVANI);
 
-    s.pridejZnamku(1);
-    s.pridejZnamku(2);
-    s.pridejZnamku(3);
+    s.hodnoceni(MATEMATIKA,   true);
+    s.hodnoceni(MATEMATIKA,   false, ZNAMKA_1);
+    s.hodnoceni(FYZIKA,       true);
+    s.hodnoceni(FYZIKA,       false, ZNAMKA_2);
+    s.hodnoceni(PROGRAMOVANI, true);
+    s.hodnoceni(PROGRAMOVANI, false, ZNAMKA_3);
 
     s.vypis();
 

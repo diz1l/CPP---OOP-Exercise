@@ -4,7 +4,15 @@
 #include <iostream>
 
 Ryba::Ryba(const char* jmeno, SlanostVody sv)
-    : Zvire(jmeno), slanostVody(sv) {}
+    : Zvire(jmeno, 5), slanostVody(sv) {}
+
+int Ryba::jez(int jidlo)
+{
+    if (!zije()) return 0;
+    if (jidlo < 0) return zaludek;
+    zaludek += jidlo;
+    return zaludek;
+}
 
 SlanostVody Ryba::getSlanostVody() const
 {

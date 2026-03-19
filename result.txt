@@ -1,9 +1,13 @@
-Vek: 3
+Vek: 1
 Zije: 1
 Po vymesovani: 0
 Student: Dias Nurgaliyev
-Znamky: 1 2 3 
+  Matematika zacet: ano zkouska: 1
+  Fyzika zacet: ano zkouska: 2
+  Programovani zacet: ano zkouska: 3
+Slozeno: 3
 Prumer: 2
+-------------------------------------------------------------------
 Jmeno: Pytlik
 Vek: 2
 Zije: 1
@@ -11,13 +15,14 @@ Po vymesovani: 0
 Zvire: Pytlik2, zaludek: 0, vek: 2
 Kopie zvire: Zvire: Pytlik2, zaludek: 0, vek: 2
 Student: Dias Nurgaliyev
-Znamky: 1 2 3 
+Znamky: 1 2 3
 Prumer: 2
 Kopie studenta: Student: Dias Nurgaliyev
-Znamky: 1 2 3 
+Znamky: 1 2 3
 Prumer: 2
 Pred sortem: 9 3 6
 Po sortu:    3 6 9
+-------------------------------------------------------------------
 a = 3 + 4i
 b = 1 - 2i
 a + b = 4 + 2i
@@ -31,14 +36,15 @@ Zvire: Pytlik, zaludek: 9, vek: 2
 Kopie: Zvire: Pytlik, zaludek: 9, vek: 2
 Prirazeni: Zvire: Pytlik, zaludek: 9, vek: 2
 Student: Dias Nurgaliyev
-Znamky: 1 2 
+Znamky: 1 2
 Prumer: 1.5
 Kopie: Student: Dias Nurgaliyev
-Znamky: 1 2 
+Znamky: 1 2
 Prumer: 1.5
 Prirazeni: Student: Dias Nurgaliyev
-Znamky: 1 2 
+Znamky: 1 2
 Prumer: 1.5
+-------------------------------------------------------------------
 s1: Ahoj
 s2 (copy s1): Ahoj
 s3: Svete
@@ -48,16 +54,18 @@ l1: 42
 l2 (copy l1): 42
 l3 (= 100): 100
 l4 (= l1): 42
+-------------------------------------------------------------------
 s1 + s2 = Ahoj Svete
 s1 += s2: Ahoj Svete
 LongInt a: 10
 LongInt b (copy): 10
 LongInt c (=25): 25
+-------------------------------------------------------------------
 --- Staticka alokace ---
-Zvire: Zvire1, zaludek: 4, vek: 1
-Zvire: Pes, zaludek: 6, vek: 1
+Zvire: Zvire1, zaludek: 4, vek: 1, ocekavany vek: 15
+Zvire: Pes, zaludek: 6, vek: 1, ocekavany vek: 25
   Savec, pocet prstu: 5
-Zvire: Papousek, zaludek: 3, vek: 1
+Zvire: Papousek, zaludek: 3, vek: 2, ocekavany vek: 15
   Ptak, barva peri: Zelena
-Zvire: Kapr, zaludek: 5, vek: 1
+Zvire: Kapr, zaludek: 5, vek: 0, ocekavany vek: 5
   Ryba, slanost vody: Sladka

@@ -4,7 +4,16 @@
 #include <iostream>
 
 Savec::Savec(const char* jmeno, PocetPrstu pp)
-    : Zvire(jmeno), pocetPrstu(pp) {}
+    : Zvire(jmeno, 25), pocetPrstu(pp) {}
+
+int Savec::jez(int jidlo)
+{
+    if (!zije()) return 0;
+    if (jidlo < 0) return zaludek;
+    vek++;
+    zaludek += jidlo;
+    return zaludek;
+}
 
 PocetPrstu Savec::getPocetPrstu() const
 {
